@@ -16,6 +16,7 @@ import { UniversalTransition } from "echarts/features";
 import { CanvasRenderer } from "echarts/renderers";
 import { onMounted, ref } from "vue";
 import { useMain } from "@/store/index";
+import { ElMessage } from "element-plus";
 export default {
   setup(props) {
     onMounted(() => {
@@ -24,6 +25,14 @@ export default {
     const store = useMain();
     const myRef = ref(null);
     const setChart = () => {
+      if (!store.updateFlag) {
+        ElMessage({
+          showClose: false,
+          message: "请计算数据后再进行模拟",
+          type: "warning",
+        });
+        return;
+      }
       echarts.use([
         GridComponent,
         MarkLineComponent,

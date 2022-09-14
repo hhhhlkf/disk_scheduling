@@ -11,13 +11,14 @@ export const useMain = defineStore('main', {
                 primTrack: 1,
                 direction: "1",
                 function: "FCFS",
-                dynamicTags: []
+                dynamicTags: [],
             },
-            road:[]
+            road: [],
+            updateFlag: false,
         }
     },
     getters: {
-
+        
     },
     actions: {
 

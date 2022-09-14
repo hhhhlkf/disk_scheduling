@@ -379,6 +379,7 @@ export default {
       allTime.value = sumTime.value + form.beginT + pipeTime.value + delayTime.value;
     };
     const onSubmit = () => {
+      store.updateFlag = true;
       store.singleForm.singleP = form.singleP;
       store.singleForm.beginT = form.beginT;
       store.singleForm.diskNum = form.diskNum;

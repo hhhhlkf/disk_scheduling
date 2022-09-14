@@ -22,3 +22,17 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Program running example
+
+##### Form:
+
+![image-20220914173308534](./src/assets/form.png)
+
+##### lineChart:
+
+![image-20220914173739835](./src/assets/lineChart.png)
+
+##### pineChart:
+
+![image-20220914173922132](./src/assets/pineChart.png)
